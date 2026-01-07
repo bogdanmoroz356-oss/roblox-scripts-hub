@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LuaRobloxScript - Best Roblox Scripts 2026</title>
+  <style>
+    body { background: #0f0f0f; color: #00ff00; font-family: 'Courier New', monospace; margin: 0; padding: 20px; }
+    h1 { text-align: center; font-size: 3em; text-shadow: 0 0 10px #00ff00; }
+    p { text-align: center; font-size: 1.2em; }
+    .container { max-width: 1000px; margin: 0 auto; }
+    .post-list { list-style: none; padding: 0; }
+    .post-item { background: #1a1a1a; margin: 10px 0; padding: 20px; border: 1px solid #00ff00; border-radius: 10px; }
+    .post-item a { color: #00ff00; text-decoration: none; font-size: 1.5em; }
+    .post-item a:hover { text-decoration: underline; }
+    .date { color: #00aa00; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>LuaRobloxScript</h1>
+    <p>🔥 Лучшие рабочие скрипты для Roblox 2026 года 🔥<br>
+    Blox Fruits, Blade Ball, Pet Simulator 99, Arsenal и многие другие!<br>
+    Все скрипты проверенные, keyless и обновляются ежедневно.</p>
+
+    <h2>Последние скрипты:</h2>
+    <ul class="post-list">
+      {% for post in paginator.posts %}
+        <li class="post-item">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+          <div class="date">{{ post.date | date: "%d %B %Y" }}</div>
+          {{ post.excerpt }}
+        </li>
+      {% endfor %}
+    </ul>
+
+    <!-- Пагинация -->
+    <div style="text-align: center; margin: 20px;">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}">« Новее</a>
+      {% endif %}
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" style="margin-left: 50px;">Старее »</a>
+      {% endif %}
+    </div>
+  </div>
+</body>
+</html>
