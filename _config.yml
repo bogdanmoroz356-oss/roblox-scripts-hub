@@ -1,0 +1,15 @@
+title: LuaRobloxScript
+description: Best Free Roblox Scripts 2026 | Blox Fruits, Blade Ball, Pet Simulator & More
+theme: jekyll-theme-midnight  # Тёмная тема, как на крутых скрипт-сайтах
+paginate: 15  # По 15 скриптов на странице
+plugins:
+  - jekyll-paginate
+
+# Дополнительно для стиля
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
