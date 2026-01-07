@@ -1,0 +1,6 @@
+title: Roblox Scripts Hub
+description: Best Roblox Scripts 2026
+theme: jekyll-theme-minimal
+paginate: 10
+plugins:
+  - jekyll-paginate
